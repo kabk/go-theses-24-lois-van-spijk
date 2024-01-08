@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif; 
+    font-size: 14px;
+    
+}
+
+.page-wrapper {
+    margin: 0 10rem
+}
+
+    header {
+        /* background-color: blue; */
+        margin: 0 0%;   
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+
+    header > * {
+        color: crimson;
+    }
+
+    header > h1 { 
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+
+    }
+
+    p{
+        line-height: 1.9;
+
+    }
+    header > p {
+        color: rgb(0, 189, 44);
+        font-size: 1.5rem;
+    }
+
+
+    h2 {
+        font-weight: 900;
+        padding: 2rem 0 0.5rem 0;
+    }
+
+    figure {
+        margin: 2rem 4rem;
+    }
+
+    figcaption > p {
+        color:rgb(178, 178, 178);
+        padding-top: 0.5rem;
+
+    }
+
+    blockquote {
+        margin: 3srem 0 3rem 3rem;
+    }
