@@ -5,6 +5,8 @@
   src: url('assets/css/fonts/AlteHaasGrotesk.woff2') format("woff2"), /* Preferred format */
        url('assets/css/fonts/AlteHaasGrotesk.woff') format("woff"),
        url('assets/css/fonts/AlteHaasGrotesk.ttf') format("truetype");
+       font-display: swap;
+  
   /* Add additional font formats as needed for better browser compatibility */
 }
 
@@ -13,6 +15,7 @@
   src: url('assets/css/fonts/Telegraf-UltraBold.woff2') format("woff2"), /* Preferred format */
        url('assets/css/fonts/Telegraf-UltraBold.woff') format("woff"),
        url('assets/css/fonts/Telegraf-UltraBold.ttf') format("truetype");
+       font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
@@ -21,6 +24,7 @@
   src: url('assets/css/fonts/Telegraf-Regular.woff2') format("woff2"), /* Preferred format */
        url('assets/css/fonts/Telegraf-Regular.woff') format("woff"),
        url('assets/css/fonts/Telegraf-Regular.ttf') format("truetype");
+       font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
@@ -29,6 +33,7 @@
   src: url('assets/css/fonts/Telegraf-UltraLight.woff2') format("woff2"), /* Preferred format */
        url('assets/css/fonts/Telegraf-UltraLight.woff') format("woff"),
        url('assets/css/fonts/Telegraf-UltraLight.ttf') format("truetype");
+       font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
@@ -49,8 +54,43 @@
 
 
 
-* {
+/* * {
   scrollbar-width: none;
+} */
+
+::-webkit-scrollbar {
+  width: 14px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a9bbcf; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Color of the handle */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1200;; /* Darker color when hovered */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: transparent; /* Color of the scrollbar corner */
+}
+
+/* Resize grip (only appears in Safari) */
+::-webkit-resizer {
+  background: #f1f1f1;
+}
+
+/* Hide scrollbar track when not interacting */
+::-webkit-scrollbar-track-piece {
+  background: transparent; /* Hide scrollbar track when not interacting */
 }
 
 
@@ -189,8 +229,8 @@ main {
 /* menu button *//* menu button *//* menu button */
 
 .title{
-  font-family: Telegraf-UltraBold;
-  font-size: 6rem;
+  font-family: Telegraf-UltraBold,sans-serif;
+  font-size: 6.5rem;
   text-transform: uppercase;
   color: #c20707;
   background-color: #FF1200;
@@ -220,8 +260,9 @@ main {
 } */
 
 #site-navigation{
-  font-family: Telegraf-regular;
-  font-size: 3.2em;
+  font-family: Telegraf-regular,sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
   line-height: 100%;
 }
 
@@ -280,7 +321,7 @@ section.section-text-block{
   width: 100%;
   height:auto;
   border: none;
-  font-family: Telegraf-Regular;
+  font-family: Telegraf-Regular,sans-serif;
   margin-top: 50vh;
   color: #ff0000;
   widows: 3;
