@@ -11,28 +11,28 @@
 }
 
 @font-face {
-  font-family: "Telegraf-UltraBold";
-  src: url('assets/css/fonts/Telegraf-UltraBold.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/Telegraf-UltraBold.woff') format("woff"),
-       url('assets/css/fonts/Telegraf-UltraBold.ttf') format("truetype");
+  font-family: "TelegrafUltraBold";
+  src: url('assets/css/fonts/TelegrafUltraBold.woff2') format("woff2"), /* Preferred format */
+       url('assets/css/fonts/TelegrafUltraBold.woff') format("woff"),
+       url('assets/css/fonts/TelegrafUltraBold.ttf') format("truetype");
        font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
 @font-face {
-  font-family: "Telegraf-Regular";
-  src: url('assets/css/fonts/Telegraf-Regular.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/Telegraf-Regular.woff') format("woff"),
-       url('assets/css/fonts/Telegraf-Regular.ttf') format("truetype");
+  font-family: "TelegrafRegular";
+  src: url('assets/css/fonts/TelegrafRegular.woff2') format("woff2"), /* Preferred format */
+       url('assets/css/fonts/TelegrafRegular.woff') format("woff"),
+       url('assets/css/fonts/TelegrafRegular.ttf') format("truetype");
        font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
 @font-face {
-  font-family: "Telegraf-UltraLight";
-  src: url('assets/css/fonts/Telegraf-UltraLight.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/Telegraf-UltraLight.woff') format("woff"),
-       url('assets/css/fonts/Telegraf-UltraLight.ttf') format("truetype");
+  font-family: "TelegrafUltraLight";
+  src: url('assets/css/fonts/TelegrafUltraLight.woff2') format("woff2"), /* Preferred format */
+       url('assets/css/fonts/TelegrafUltraLight.woff') format("woff"),
+       url('assets/css/fonts/TelegrafUltraLight.ttf') format("truetype");
        font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
@@ -45,9 +45,9 @@
   --color-text-link: rgba(0,0,255,0.8);
   --color-text-link-hover: rgba(0,0,255,0.4); */
   /* Font settings */
-  --main-text-size: 18px;
+  /* --main-text-size: 18px;
   --large-text-size: 68px;
-  --small-text-size: 12px;
+  --small-text-size: 12px; */
   /* Margins settings */
   /* --margin: 1rem; */
 }
@@ -110,11 +110,13 @@ h20 {
 
 h2 {
   font-size: 80px;
+  font-family: "AlteHaasGrotesk",sans-serif;
+
 }
 
 
 html, body {
-  font-size: clamp( 20px, 2.25vw, 28px); 
+  /* font-size: clamp( 20px, 2.25vw, 28px);  */
 
 	-webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -128,7 +130,7 @@ box-sizing: border-box;
 
 body{
   background-color: #a9bbcf; 
-  font-size: 44px;
+  font-size: 14px;
   /* transition: background-color 0.5s ease; Smooth transition */
 }
 
@@ -161,7 +163,7 @@ main {
                 height: 100vh;
                 /* overflow: hidden; */
                 z-index: 111111;
-                font-family: 'Helvetica Neue', sans-serif;
+                font-family: Helvetica, Arial, sans-serif;
                 background: #0055ff;
                 line-height: 60%;
                 overflow-y: auto;
@@ -191,18 +193,21 @@ main {
             }
             #navbar > a.toggle:after {
               content: 'CLOSE';
-              font-size: 0.8em;
+              font-size: 1.4rem;
+              margin: 1px;
+              font-family: "AlteHaasGrotesk",sans-serif;
+              font-size: 1.2rem;
             
               
             }
             #navbar.closed > a.toggle:after {
               content: 'THANKS TO';
-              font-size: 0.8em;
-              font-weight: 400;
+              font-family: "AlteHaasGrotesk",sans-serif;
+              font-size: 1.4rem;
               color: black;
               mix-blend-mode: difference;
               background-color: #DDFF00;
-              padding: 0.2rem;
+              padding: 0.4rem;
             }
 
             #navbar a {
@@ -213,10 +218,11 @@ main {
               margin-right: 1rem;
               text-decoration: none;
               background-color: transparent;
-              font-family: 'Helvetica Neue', sans-serif;
-              font-size: 0.6em;
-              line-height: 38px;
+              font-family: "AlteHaasGrotesk",sans-serif;
+              font-size: 3.8rem;
+              line-height: 62px;
               font-weight: 500;
+              margin-bottom: 20px;
             }
             #navbar a:hover {
               /* background-color:#eee9dc; */
@@ -229,8 +235,8 @@ main {
 /* menu button *//* menu button *//* menu button */
 
 .title{
-  font-family: Telegraf-UltraBold,sans-serif;
-  font-size: 6.5rem;
+  font-family: "AlteHaasGrotesk",sans-serif;
+  font-size: 12rem;
   text-transform: uppercase;
   color: #c20707;
   background-color: #FF1200;
@@ -238,10 +244,14 @@ main {
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 100vh;
-  line-height: 140px;
+  line-height: 155px;
   position: relative;
   text-align: left;
 
+}
+
+.space {
+  letter-spacing: -1px; /* Adjust this value to increase or decrease space */
 }
 
 /* .content {
@@ -260,9 +270,9 @@ main {
 } */
 
 #site-navigation{
-  font-family: Telegraf-regular,sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 6rem;
   line-height: 100%;
 }
 
@@ -313,6 +323,8 @@ a:active { text-decoration: none; color: #DDFF00; }
 
 
 section.section-text-block{
+  margin-left: 1rem;
+  margin-right: 1rem;
   position:sticky;
   display:flex;
   flex-direction:row;
@@ -321,7 +333,7 @@ section.section-text-block{
   width: 100%;
   height:auto;
   border: none;
-  font-family: Telegraf-Regular,sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin-top: 50vh;
   color: #ff0000;
   widows: 3;
@@ -346,7 +358,7 @@ section.section-text-block .subsection{
 
 .subsection-is-main {
   line-height: 1.5;
-  font-size: 0.55em;
+  font-size: 1.5rem;
   background-color: none;
 }
 
@@ -354,9 +366,10 @@ section.section-text-block .subsection{
   padding-top: 2.8rem;
   padding-right: 1rem;
   width: 85%;
+  margin-right: 2rem;
   line-height: 1.5;
   padding-left: 10%;
-  font-size: 0.50em;
+  font-size: 1.5rem;
   color: #DDFF00;
   top:1rem;
   position: sticky;
@@ -406,9 +419,22 @@ section.section-text-block .subsection{
     width: 100%;
     text-align: left;
     font-size: 0.6em;
-    margin-right: 10px;
+  
+  } 
+  
+  #navbar a {
+    /* float: left; */
+    /* display:inline; */
+    color: #eee9dc;
+    text-align: left;
+    margin-right: 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.6em;
+    line-height: 38px;
+    font-weight: 500;
   }
-
   
       
     .subsection-is-main {
