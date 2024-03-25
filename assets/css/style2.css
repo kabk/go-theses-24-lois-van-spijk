@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: "AlteHaasGrotesk";
-  src: url('assets/css/fonts/AlteHaasGrotesk.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/AlteHaasGrotesk.woff') format("woff"),
-       url('assets/css/fonts/AlteHaasGrotesk.ttf') format("truetype");
+  src: url('/assets/css/fonts/AlteHaasGrotesk.woff2') format("woff2"), /* Preferred format */
+       url('/assets/css/fonts/AlteHaasGrotesk.woff') format("woff"),
+       url('/assets/css/fonts/AlteHaasGrotesk.ttf') format("truetype");
        font-display: swap;
   
   /* Add additional font formats as needed for better browser compatibility */
