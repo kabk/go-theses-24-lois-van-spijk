@@ -75,7 +75,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF1200;; /* Darker color when hovered */
+  background: #000000;; /* Darker color when hovered */
 }
 
 /* Corner */
@@ -234,7 +234,7 @@ main {
 
 .title{
 
-  background-color: #FF1200;
+  background-color: #DDFF00;
   height: 100vh;
   padding-top: 30px;
   padding-left: 30px;
@@ -249,7 +249,7 @@ h1 {
   font-family: "AlteHaasGrotesk",sans-serif;
   font-size: 9.5rem;
   text-transform: uppercase;
-  color: #c20707;
+  color: #000000;
 
   
 }
@@ -330,7 +330,7 @@ section.section-text-block{
   border: none;
   font-family: Helvetica, Arial, sans-serif;
   margin-top: 50vh;
-  color: #ff0000;
+  color: rgb(0, 0, 0);
   widows: 3;
 
 }
@@ -355,11 +355,12 @@ section.section-text-block .subsection{
 .subsection-is-main {
   line-height: 1.5;
   font-size: 1.3rem;
+  gap: 1rem;
   background-color: none;
 }
 
 .subsection-is-journal {
-  padding-top: 2.8rem;
+  padding-top: 4rem;
   padding-right: 1rem;
   width: 85%;
   margin-right: 2rem;
@@ -398,6 +399,26 @@ blockquote {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (orientation: portrait)
 {
 
@@ -406,13 +427,13 @@ blockquote {
   
     /* content: "Stored energy, bound to be released"; */
     padding: none;
-    font-size: 5rem;
+    font-size: 5.2rem;
     line-height: 1;
     transform-origin: left bottom;
     transform: rotate(90deg);
     position: absolute;
-    top: -32%;
-    left: 5%;
+    top: -37%;
+    left: 1%;
   }
 }
 
@@ -484,42 +505,3 @@ section.section-text-block {
     box-sizing: border-box;
   }
 }
-
-
-
-
-/*
-
-@media (max-width: 298px) { 
-  :root{ --font-size: 15px; } html, body {font: var(--font-size) var(--font-family);} 
-}
-@media (min-width: 299px) and (max-width: 339px) { 
-  :root{ --font-size: 16px; } html, body {font: var(--font-size) var(--font-family);} 
-}
-@media (min-width: 340px) and (max-width: 439px) { 
-  :root{ --font-size: 17px; } html, body {font: var(--font-size) var(--font-family);} 
-}
-@media (min-width: 440px) and (max-width: 599px) { 
-  :root{ --font-size: 18px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 600px) and (max-width: 779px) { 
-  :root{ --font-size: 19px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 780px) and (max-width: 992px) { 
-  :root{ --font-size: 20px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 993px) and (max-width: 1200px) { 
-  :root{ --font-size: 22px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 1201px) and (max-width: 1319px) { 
-  :root{ --font-size: 24px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 1320px) and (max-width: 1619px) { 
-  :root{ --font-size: 26px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 1620px) and (max-width: 1879px) { 
-  :root{ --font-size: 28px; } html, body {font: var(--font-size) var(--font-family);}
-}
-@media (min-width: 1880px) { 
-  :root{ --font-size: 30px; } html, body {font: var(--font-size) var(--font-family);}
-} */
