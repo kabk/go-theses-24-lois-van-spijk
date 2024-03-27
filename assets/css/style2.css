@@ -5,7 +5,9 @@
   src: url('/assets/css/fonts/AlteHaasGrotesk.woff2') format("woff2"), /* Preferred format */
        url('/assets/css/fonts/AlteHaasGrotesk.woff') format("woff"),
        url('/assets/css/fonts/AlteHaasGrotesk.ttf') format("truetype");
-       font-display: swap;
+       font-display: swap; 
+       font-weight: normal;
+       font-style: normal;
   
   /* Add additional font formats as needed for better browser compatibility */
 }
@@ -487,21 +489,8 @@ blockquote {
     font-weight: 500;
   }
   
-      
 
 section.section-text-block {
-    margin-right: 0;
     flex-direction: column;
-    position: relative;  
-  }
-
-  section.section-text-block.order-reversed {
-    flex-direction: column-reverse;
-  }
-
-  section.section-text-block .subsection {
-    font-size: 16px; /* Adjust subsection font size for smaller screens */
-    padding: 1rem;
-    box-sizing: border-box;
-  }
 }
+
