@@ -21,7 +21,7 @@
   /* Add additional font formats as needed for better browser compatibility */
 }
 
-@font-face {
+@font-face {  
   font-family: "TelegrafRegular";
   src: url('assets/css/fonts/TelegrafRegular.woff2') format("woff2"), /* Preferred format */
        url('assets/css/fonts/TelegrafRegular.woff') format("woff"),
@@ -111,8 +111,8 @@ h20 {
 }
 
 h2 {
-  margin-top: -3px;
-  font-size: 70px;
+  margin-top: -1px;
+  font-size: 3rem;
   font-family: "AlteHaasGrotesk",sans-serif;
 
 }
@@ -238,10 +238,9 @@ main {
 
   background-color: #DDFF00;
   height: 100vh;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: 30px;
   padding-bottom: 100vh;
-  line-height: 123px;
   position: relative;
   text-align: left;
 
@@ -249,7 +248,9 @@ main {
 
 h1 {
   font-family: "AlteHaasGrotesk",sans-serif;
-  font-size: 9.5rem;
+  font-size: 8rem;
+  letter-spacing: -0.1px;
+  line-height: 109px;
   text-transform: uppercase;
   color: #000000;
 
@@ -356,9 +357,11 @@ section.section-text-block .subsection{
 
 .subsection-is-main {
   line-height: 1.5;
-  font-size: 1.3rem;
+  font-size: 1rem;
   gap: 1rem;
   background-color: none;
+  hyphens: manual;
+  
 }
 
 .subsection-is-journal {
@@ -368,7 +371,7 @@ section.section-text-block .subsection{
   margin-right: 2rem;
   line-height: 1.5;
   padding-left: 10%;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #DDFF00;
   top:1rem;
   position: sticky;
