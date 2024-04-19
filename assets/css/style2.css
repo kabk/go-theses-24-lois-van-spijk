@@ -476,12 +476,12 @@ blockquote {
     width: 85vw;
   }
 
-  #navbar a {
+  #navbar a{
     /* float: left; */
     /* display:inline; */
     color: #eee9dc;
     text-align: left;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     text-decoration: none;
     background-color: transparent;
     font-family: Helvetica, Arial, sans-serif;
@@ -489,9 +489,18 @@ blockquote {
     line-height: 38px;
     font-weight: 500;
   }
+
+#navbar p{
+  padding-right: 2rem;
+  padding-left: -3rem;
+  font-size: 28px;
+  width: 85vw;
+}
   
 
 section.section-text-block {
     flex-direction: column;
 }
 }
+}
+
