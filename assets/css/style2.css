@@ -407,19 +407,22 @@ blockquote {
 
 
 
-
-
-@media (max-width: 600px) {
-
-  .title > h1 { 
+@media (orientation: portrait)
+{
+.title > h1 { 
     /* padding: none;
     font-size: 3rem;
     line-height: 1;
     /* transform-origin: left bottom; */
     font-size: 3rem;
     max-width: 90vw;
+    top: 80%;
     line-height: normal;
 }
+
+
+
+@media (max-width: 600px) {
 
   /* h2 {
     font-size: 50px;
@@ -487,22 +490,8 @@ blockquote {
     font-weight: 500;
   }
   
-  section.section-text-block{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    position:sticky;
-    display:flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    align-items: flex-start;
-    width: 90%;
-    height:auto;
-    border: none;
-    font-family: Helvetica, Arial, sans-serif;
-    margin-top: 50vh;
-    color: rgb(0, 0, 0);
-    widows: 3;
-  
-  }
+
+section.section-text-block {
+    flex-direction: column;
+}
 }
