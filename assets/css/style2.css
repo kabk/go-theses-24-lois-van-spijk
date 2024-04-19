@@ -407,9 +407,11 @@ blockquote {
 
 
 
-@media (orientation: portrait)
-{
-.title > h1 { 
+
+
+@media (max-width: 600px) {
+
+  .title > h1 { 
     /* padding: none;
     font-size: 3rem;
     line-height: 1;
@@ -418,10 +420,6 @@ blockquote {
     max-width: 90vw;
     line-height: normal;
 }
-
-
-
-@media (max-width: 600px) {
 
   /* h2 {
     font-size: 50px;
@@ -507,5 +505,4 @@ blockquote {
     widows: 3;
   
   }
-}
 }
