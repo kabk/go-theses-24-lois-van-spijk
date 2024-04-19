@@ -40,22 +40,6 @@
 }
 
 
-:root {
-  /* Color settings */
-
-  /* --color-text: rgb(255, 255, 255);
-  --color-text-link: rgba(0,0,255,0.8);
-  --color-text-link-hover: rgba(0,0,255,0.4); */
-  /* Font settings */
-  /* --main-text-size: 18px;
-  --large-text-size: 68px;
-  --small-text-size: 12px; */
-  /* Margins settings */
-  /* --margin: 1rem; */
-}
-
-
-
 /* * {
   scrollbar-width: none;
 } */
@@ -116,7 +100,6 @@ h2 {
   font-family: "AlteHaasGrotesk",sans-serif;
 
 }
-
 
 
 
@@ -426,20 +409,14 @@ blockquote {
 
 @media (orientation: portrait)
 {
-
-  /* ::before */
-  .title > h1 { 
-  
-    /* content: "Stored energy, bound to be released"; */
-    padding: none;
-    font-size: 5.2rem;
+.title > h1 { 
+    /* padding: none;
+    font-size: 3rem;
     line-height: 1;
-    transform-origin: left bottom;
-    transform: rotate(90deg);
-    position: absolute;
-    top: -37%;
-    left: 1%;
-  }
+    /* transform-origin: left bottom; */
+    font-size: 3rem;
+    max-width: 90vw;
+    line-height: normal;
 }
 
 
@@ -464,7 +441,7 @@ blockquote {
 
   #site-navigation{
     margin-left: -1%;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 110%;
   }
 
@@ -477,6 +454,26 @@ blockquote {
   
   } 
 
+  h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: "AlteHaasGrotesk",sans-serif;
+  
+  }
+
+  p{
+    width: 85vw;
+  }
+
+  blockquote{
+    width: 85vw;
+    padding-right: 70px;
+
+  }
+  
+  li{
+    width: 85vw;
+  }
 
   #navbar a {
     /* float: left; */
@@ -496,4 +493,4 @@ blockquote {
 section.section-text-block {
     flex-direction: column;
 }
-
+}
