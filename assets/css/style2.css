@@ -489,8 +489,23 @@ blockquote {
     font-weight: 500;
   }
   
-
-section.section-text-block {
-    flex-direction: column;
+  section.section-text-block{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position:sticky;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 90%;
+    height:auto;
+    border: none;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 50vh;
+    color: rgb(0, 0, 0);
+    widows: 3;
+  
+  }
 }
 }
