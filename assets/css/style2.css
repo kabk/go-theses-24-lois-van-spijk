@@ -2,9 +2,9 @@
 
 @font-face {
   font-family: "AlteHaasGrotesk";
-  src: url('/assets/css/fonts/AlteHaasGrotesk.woff2') format("woff2"), /* Preferred format */
-       url('/assets/css/fonts/AlteHaasGrotesk.woff') format("woff"),
-       url('/assets/css/fonts/AlteHaasGroteskRegular.ttf') format("truetype");
+  src: url('fonts/AlteHaasGrotesk.woff2') format("woff2"), /* Preferred format */
+       url('fonts/AlteHaasGrotesk.woff') format("woff"),
+       url('fonts/AlteHaasGroteskRegular.ttf') format("truetype");
        font-display: swap; 
        font-weight: normal;
        font-style: normal;
@@ -14,27 +14,27 @@
 
 @font-face {
   font-family: "TelegrafUltraBold";
-  src: url('assets/css/fonts/TelegrafUltraBold.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/TelegrafUltraBold.woff') format("woff"),
-       url('assets/css/fonts/TelegrafUltraBold.ttf') format("truetype");
+  src: url('fonts/TelegrafUltraBold.woff2') format("woff2"), /* Preferred format */
+       url('fonts/TelegrafUltraBold.woff') format("woff"),
+       url('fonts/TelegrafUltraBold.ttf') format("truetype");
        font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
 @font-face {  
   font-family: "TelegrafRegular";
-  src: url('assets/css/fonts/TelegrafRegular.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/TelegrafRegular.woff') format("woff"),
-       url('assets/css/fonts/TelegrafRegular.ttf') format("truetype");
+  src: url('fonts/TelegrafRegular.woff2') format("woff2"), /* Preferred format */
+       url('fonts/TelegrafRegular.woff') format("woff"),
+       url('fonts/TelegrafRegular.ttf') format("truetype");
        font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
 
 @font-face {
   font-family: "TelegrafUltraLight";
-  src: url('assets/css/fonts/TelegrafUltraLight.woff2') format("woff2"), /* Preferred format */
-       url('assets/css/fonts/TelegrafUltraLight.woff') format("woff"),
-       url('assets/css/fonts/TelegrafUltraLight.ttf') format("truetype");
+  src: url('fonts/TelegrafUltraLight.woff2') format("woff2"), /* Preferred format */
+       url('fonts/TelegrafUltraLight.woff') format("woff"),
+       url('fonts/TelegrafUltraLight.ttf') format("truetype");
        font-display: swap;
   /* Add additional font formats as needed for better browser compatibility */
 }
@@ -45,7 +45,9 @@
 } */
 
 ::-webkit-scrollbar {
+  position: relative;
   width: 13px; /* Width of the scrollbar */
+  z-index: 9999999;
 }
 
 /* Track */
@@ -101,6 +103,9 @@ h2 {
 
 }
 
+p {
+  text-wrap: pretty;
+}
 
 
 html, body {
@@ -128,8 +133,13 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   height: 110vh;
   overflow: scroll;
+
+
+
+  overflow-x: clip;
   z-index: -1;
 }
 
@@ -227,6 +237,12 @@ main {
   position: relative;
   text-align: left;
 
+}
+
+.title h1 {
+
+  width: min(100%, 40ch);
+  text-wrap: balance;
 }
 
 h1 {
@@ -384,6 +400,7 @@ section.section-text-block .subsection{
 
 blockquote {
   margin: 1rem 4rem;
+  margin: 1rem 1.5rem;
 }
 
 
@@ -415,9 +432,13 @@ blockquote {
     line-height: 1;
     /* transform-origin: left bottom; */
     font-size: 3rem;
-    max-width: 90vw;
+    /* max-width: 90vw; */
+
+    /* width: min(100%, 40ch); */
     top: 80%;
     line-height: normal;
+
+    text-wrap: balance;
 }
 
 
@@ -439,6 +460,16 @@ blockquote {
     line-height: 50px;
     
   } */
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
   #site-navigation{
     margin-left: -1%;
@@ -501,6 +532,9 @@ blockquote {
 section.section-text-block {
     flex-direction: column;
 }
+
+section.section-text-block .subsection{
+  width: auto;
 }
 }
 
